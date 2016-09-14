@@ -32,7 +32,7 @@ This command trains exactly the same MSCNN as the first one.
 However, You can enjoy 10x speedup if you have GPU with 
 CUDA installed using this command.
 
-3. run ```python mcnn.py -h ``` for more information.
+run ```python mcnn.py -h ``` for more information.
 
 ##                    Standard Output           
 ```
