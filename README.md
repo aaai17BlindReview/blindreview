@@ -17,16 +17,16 @@ mcnn.py trains on one of the ucr dataset, Trace, with
 multiscale convolutional neural network (MSCNN). 
 It can run on both CPU and GPU.
 ```
-0. run 'python mcnn.py' 
+python mcnn.py 
 ```
 This command trains a MSCNN with default parameters. 
 You should be able to get zero error on train set, 
 validation set as well as test set.
 
 ```
-1. run "THEANO_FLAGS='blas.ldflags=-lblas -lgfortran,mode=FAST_RUN,
+THEANO_FLAGS='blas.ldflags=-lblas -lgfortran,mode=FAST_RUN,
           cuda.root=/usr/local/cuda,device=gpu,floatX=float32,
-          lib.cnmem=1' python mcnn.py" 
+          lib.cnmem=1' python mcnn.py 
 ```
 This command trains exactly the same MSCNN as the first one. 
 However, You can enjoy 10x speedup if you have GPU with 
